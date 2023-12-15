@@ -38,7 +38,6 @@ jobs:
 
           - name: test-app
             run: |
-              cd karsajobs
               go test -v -short --count=1 $(go list ./...)
 
           - name: Extract metadata (tags, labels) for Docker
